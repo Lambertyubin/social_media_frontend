@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+## How I worked on this project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My goal was to simulate a social network single-page application. Just for fun :). I lately developed and integrated some social network features in a marketing application, and wanted to see how these features play together in a social app.
+
+- I used React and Material-UI libraries for the frontend. This is work-in-progress as with time I intend to build a fully responsive frontend using styled-components.
+- And I used Node.js, Express.js and MongoDB for the backend
+
+## How to navigate this project
+
+### Frontend
+
+- Some stateful logic: [link to stateful logic]
+- CSS: [link to css]
+- UI components: [link]
+  The application fetches data from a backend API that I built as part of the project.
+- Requests to API for authentication: [link]
+- Requests to API for user data: [link]
+
+- Integration tests using React Testing Library [link to example test]
+
+### Backend
+
+- Express.js middleware: [link]
+- API entry routes: [link to routes]
+- Example of Database model with Mongoose:
+- Application logic to retrieve data from the MongoDB database: [link]
+- I tested this API's CRUD operations using Postman
+
+## Why I built the project this way
+
+### Frontend
+
+- I used React as the major frontend library because its virtual DOM feature provides a smooth user experience whereby only necessary parts of each component are updated when state changes.
+
+### Backend
+
+- I choose Node.js due to it does a great job at handling concurrent requests due to its asynchronous event-driven IO. A backend that is fast at processing requests and providing responses without blocking incoming requests was critical for this social media app.
+- I also used Express.js due to its popularity at managing middleware needed to manipulate the request and response objects during a request-response cycle. With express, I was able to build a fast RESTful API with all CRUD operations linking to the database.
+- MongoDB was used because I needed some flexibility in type of data to store for each user's data, as well as scalability as the system grow.
+
+Testing is an essential part of production applications. Testing Library is the go-to library in the React community. I covered the essential features of the app with tests.
+
+## During my extra time, I intend to improve the following:
+
+- Complete the frontend to have a fully-responsive UI based on some cool Figma designs
+- Set up continuous integration to run the tests
+- Add end-to-end tests with Cypress
 
 ## Available Scripts
 
-In the project directory, you can run:
+### Frontend
 
-### `npm start`
+- `npm start` to run the application
+- `npm test` to run tests
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `npm start` to run the application, as it's still in dev stage.
